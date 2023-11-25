@@ -1,0 +1,22 @@
+.call{
+    padding-top: 120px;
+}
+.call_container{
+    text-align: center;
+}
+.call__title{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 25px;
+    color: gray;
+    transition: all 0.4s ease;
+    margin-bottom: 64px;
+}
+
+.call__title:hover{
+    color: rgb(72, 72, 135);
+}
+
+.call_item__name{
+    color: rgb(221, 0, 0);
+}

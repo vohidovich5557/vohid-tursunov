@@ -1,0 +1,131 @@
+.about{
+    padding-top: 64px;
+}
+
+.about_block{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-image: url(../img/benefits_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    border-radius: 10px;
+    text-align: center;
+}
+.about__title{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 32px;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.items{
+   background-color: rgb(39, 111, 111);
+   background-size: cover;
+   border-radius: 10px;
+   padding-top: 64px;
+   padding-bottom: 64px;
+   padding-left: 24px;
+   padding-right: 24px;
+   margin-bottom: 24px;
+   text-align: center;
+}
+.item_1::before{
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/coffee_bean.svg);
+    width: 72px;
+    height: 72px;
+    margin-bottom: 32px;
+}
+
+.item_2::before{
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/coffee_gifts.svg);
+    width: 72px;
+    height: 72px;
+    margin-bottom: 32px;
+}
+
+.item_3::before{
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/coffee_truck.svg);
+    width: 72px;
+    height: 72px;
+    margin-bottom: 32px;
+}
+.item__name{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 24px;
+}
+.item__info{
+    color: #fff;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 765px) {
+    .items{
+        max-width: 573px;
+        text-align: center;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: bottom;
+        gap: 30px;
+    }
+    .item__info{
+        max-width: 375px;
+    }
+    
+    .about__title{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item__name{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .item__info{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .item{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .items{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .about__title{
+        font-size: 30px;
+    }
+}

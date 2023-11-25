@@ -1,0 +1,106 @@
+.hero {
+    padding-top: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.hero_container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(170, 165, 165);
+    border-radius: 10px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    
+}
+
+.hero__name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    color: rgb(72, 72, 135);
+}
+
+.hero__info {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 32px;
+    opacity: 0.8;
+    
+}
+
+.hero__btn {
+    background-color: rgb(41, 126, 98);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.hero__btn:hover {
+    background-color: rgb(15, 242, 242);
+}
+
+@media screen and (min-width: 686px) {
+    .hero_container{
+        text-align: left;
+        padding-left: 58px;
+        padding-left: 48px;
+        padding-right: 48px;
+        
+    }
+    .hero__name{
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 15px;
+        margin-bottom: 26px;
+        max-width: 243px;
+        margin-bottom: 32px;
+    }
+    .hero__info{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        max-width: 466px;
+        margin-bottom: 45px;
+    }
+    .hero__btn{
+        padding: 20px 30px;
+    }
+}
+@media screen and (min-width: 1039px) {
+    .hero__name{
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 15px;
+        margin-bottom: 40px;
+        max-width: 375px;
+    }
+    .hero__info{
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-bottom: 64px;
+        max-width: 648px;
+    }
+    .hero__btn{
+        padding: 25px 40px;
+        background-color: rgb(85, 182, 150);
+    }
+    .hero_container{
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+    }
+}

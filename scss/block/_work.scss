@@ -1,0 +1,120 @@
+.work{
+    padding-top: 120px;
+}
+.work_container{
+    text-align: center;
+    align-items: center;
+}
+.work__title{
+    color: gray;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 25px;
+    transition: all 0.4s ease;
+    margin-bottom: 64px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.work__title:hover{
+    color: rgb(72, 72, 135);
+}
+
+.work_item{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
+}
+.line_items{
+    display: none;
+    position: relative;
+    height: 2px;
+    max-width: 467px;
+    background-color: #FDD6BA;
+    margin-bottom: 48px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.line_item{
+    width: 31px;
+    height: 31px;
+    background-color: #fff;
+    border-radius: 26px;
+    border: 2px solid #0E8784;
+}
+
+.work_list{
+    text-align: center;
+}
+
+.info__title{
+    color: #333D4B;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 32px;
+    margin-bottom: 24px;
+    white-space: nowrap;
+}
+.info__text{
+    color: #333D4B;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work_list::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/work_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90px;
+    height: 72px;
+    margin-bottom: 24px;
+}
+.work_list:nth-child(2)::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/work_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90px;
+    height: 72px;
+}
+
+.work_list:nth-child(3)::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/work_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90px;
+    height: 72px;
+}
+
+.work_list{
+    margin-bottom: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 765px) {
+    .work__title{
+        text-align: left;
+    }
+    .line_items{
+        display: flex;
+    }
+    .work_item{
+        display: flex;
+        align-items: start;
+        gap: 10px;
+    }
+    
+}
